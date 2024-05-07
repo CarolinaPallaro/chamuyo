@@ -5,12 +5,30 @@
   color: #888;
 } 
 
-.App-tittle{
-  color: #e3e0e0;
-  font-size: 30px;
-  text-shadow: #d2d2d234 4px 2px;
+.App-tittle{  
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 50px 0;
+  
+  
+  
+}
+.App-tittle h1{
+  display: inline-block;
+  border-right: 1px solid rgba(0,0,0,.3);
+  font-size: 200%;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+.luna{
+  height:50px ;
+  width:50px ;
+  border-radius: 50%;
+  border-style:double;
+  background-color: aliceblue;
+  box-shadow:6px 20px 90px rgba(247, 245, 245, 0.698);
+  
+}
 .cards-container
 {
   display: grid;
@@ -89,9 +107,11 @@
   grid-template-rows: repeat(5, 1fr); /* Cinco filas */
   gap: 10px; 
   padding: 0px;
-  position: absolute; /* Establece el posicionamiento absoluto */ 
-  width: 100%; /* Ocupa el ancho completo del contenedor */
-  height: 50%; /* Establece la mitad de la altura del contenedor superior */
+  position: absolute; 
+  width: 100%; 
+  height: 50%; 
+  background-image: url('../public/imgs/fondoEstrellas.jpg');
+  background-size: cover;
   
 
 }

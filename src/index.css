@@ -2,8 +2,8 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  background-color:rgb(37 50 56);
-  color-scheme: light dark;
+  background: rgb(37,50,56);
+  background: linear-gradient(0deg, rgba(37,50,56,1) 28%, rgba(37,50,56,1) 35%, rgba(30,37,46,1) 47%, rgba(22,27,34,1) 58%);  color-scheme: light dark;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

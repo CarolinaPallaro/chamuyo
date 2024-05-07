@@ -20,9 +20,11 @@ function App() {
   return (
     <>
 
+    <div className="App-tittle">
+    <span className="luna"></span>
+      <h1>30 motivos para enamorarse de vos</h1>
+    </div>
 
-
-   <h1 className="App-tittle">30 motivos para enamorarse de vos</h1>
 
    <div className="cards-container">
                 <Card title=".1" paragraph="Tenés un 🤍 enorme" />
