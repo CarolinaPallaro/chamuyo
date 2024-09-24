@@ -3,7 +3,7 @@
 
 
 const ModalsTxt = ({ toggleModal, text, paragraphs }) => {
-    const close = "./public/imgs/close.svg";
+    const close = "/imgs/close.svg";
   
     return (
         <div className="modal">
