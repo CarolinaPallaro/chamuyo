@@ -13,7 +13,7 @@ const ButtonModal = ({text, paragraphs, image}) => {
       <img
         className="brillo-svg"
         onClick={toggleModal}
-        src="./public/imgs/brillo.svg"
+        src="/imgs/brillo.svg"
         alt="brillos"
       />
       {isOpen &&
