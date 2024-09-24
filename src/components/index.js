@@ -3,7 +3,7 @@ export * from './buttons';
 export * from './carrousel';
 export * from './Cards';
 export * from './modals/arreglo';
-export * from './footer';
+export * from './footer/Footer';
 
 
 

@@ -1,59 +1,74 @@
-*{
-  margin-bottom: 0;
-}
- .read-the-docs {
-  color: #888;
-} 
+* {
+  
+  font-family: sans-serif;
+  font-weight: 200;
+  font-style: italic;
 
-.App-tittle{  
+
+
+}
+
+
+.read-the-docs {
+  color: #f1eded;
+}
+
+.App-tittle {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   margin: 50px 0 50px 0;
-  
-  
-  
+
 }
-.App-tittle h1{
+
+.App-tittle h1 {
+  color: rgb(65, 49, 125);
+  font-style: italic;
   display: inline-block;
-  border-right: 1px solid rgba(0,0,0,.3);
   font-size: 200%;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.luna{
-  height:50px ;
-  width:50px ;
-  border-radius: 50%;
-  border-style:double;
-  background-color: aliceblue;
-  box-shadow:6px 20px 90px rgba(247, 245, 245, 0.698);
+.App-tittle p{
+  font-size:15px;
+  font-style: italic;
+  padding: 5px;
   
 }
-.cards-container
-{
+
+.cards-container {
+  
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Dos columnas */
-  gap: 30px; 
+  grid-template-columns: repeat(2, 1fr);
+  /* Dos columnas */
+  gap: 30px;
   
- 
+
+
 }
+
+
 
 
 .card {
-  background-color: rgba(250, 246, 239, 0.654);
+  background-color: rgba(58, 136, 178, 0);
   border-radius: 5px;
   padding: 5%;
   margin-bottom: 20%;
-  box-shadow:0px 1px 20px rgba(0, 0, 0, 0.2);
-  margin:1rem;
-  overflow: hidden; /*para que no desborde contenido*/
-  
+  box-shadow:   0 1px 10px rgba(205, 197, 197, 0.458);
+  /* margin: 1rem; */
+  overflow: hidden;
+
+ 
+
 }
 
-.card:hover{
+.card:hover {
   transform: scale(1.05);
-  transition: all 0.3s  ease-in-out;
-  background-color: transparent; 
+  transition: all 0.3s ease-in-out;
+  background-color:#d9d7d62d;
+ 
+  
 
 }
 
@@ -61,28 +76,52 @@
 .card h1 {
   font-size: 24px;
   margin-bottom: 10px;
-  color: #666;
-  
+  color: #1c1a1af0;
+ 
 }
 
-.card span{
+
+
+.card span {
   padding: 0%;
- 
+
 }
 
 
 .card p {
   font-size: 16px;
-  color: #666;
-  
-  
+  color: #b9b6b612;
+
+
 }
 
-.modal{
+.card p:hover{
+  color: rgb(65, 49, 125);
+  font-size:large;
+
+}
+
+
+.divCarousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.tittleCarousel {
+  color: rgb(65, 49, 125);
+  justify-self: center;
+ 
+
+}
+
+.modal {
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content:space-around;
+  justify-content: space-around;
   margin: auto;
   height: 30vh;
   width: 60vw;
@@ -92,36 +131,37 @@
   padding: 20px;
   transform: translate(-50%, -50%);
   z-index: 10;
-  box-shadow: 0 0 100px rgba(235, 244, 139, 0.5);
+  box-shadow: 0 0 100px rgba(240, 242, 223, 0.5);
   border-radius: 10px;
   overflow: hidden;
-  background-color: #333431dd;
-  transition: opacity 0.3s ease; 
- 
+  background-color: #ffffff;
+  transition: opacity 0.3s ease;
+
 }
 
-.buttons-container{
-  
+.buttons-container {
+
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Dos columnas */
-  grid-template-rows: repeat(5, 1fr); /* Cinco filas */
-  gap: 10px; 
-  padding: 0px;
-  position: absolute; 
-  width: 100%; 
-  height: 50%; 
-  background-image: url('../public/imgs/fondoEstrellas.jpg');
+  grid-template-columns: repeat(5, 1fr);
+  /* Dos columnas */
+  grid-template-rows: repeat(4, 1fr);
+  /* Cinco filas */
+  gap: 10px;
+  position: absolute;
+  justify-items: center;
+  height: 300px;
+ 
   background-size: cover;
-  
+
 
 }
 
-.button-modal{
-  
+.button-modal {
+
   padding: 0%;
   width: 50%;
-  height: 30px;
-  margin:auto;
+  height: 10px;
+  margin: auto;
 
 }
 
@@ -129,13 +169,15 @@
 img {
   width: 30%;
   margin: auto;
+  
 }
 
-img:hover{
+img:hover {
 
   transform: scale(1.05);
-  transition: all 0.3s  ease-in-out;
- 
+  transition: all 0.3s ease-in-out;
+
+
 }
 
 
@@ -144,25 +186,28 @@ img:hover{
   filter: drop-shadow(2px 4px 6px rgb(238, 253, 192) )
 } */
 
-.brillo-svg:hover{
-filter: drop-shadow(7px 10px 10px  rgb(229, 233, 214))
+.brillo-svg:hover {
+  filter: invert();
+ 
+
 }
 
 
 /*Especificas para SVG CLOSE*/
 
-.exit-button{
- height: 20%;
- cursor: pointer;
+.exit-button {
+  height: 20%;
+  cursor: pointer;
 
 }
 
-.footer{
-  background-image: url('/public/imgs/montañas.jpg');
-  background-size:cover;
-  background-position: center; 
-  height:500px;
-  width: 100%;
+.Footer {
  
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  width: 100wh;
+  z-index: -1;
+  bottom: 0;
 
 }
